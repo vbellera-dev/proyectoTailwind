@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nerflis</title>
+</head>
+<!-- bg-gradient-to-b from-black/90 via-black/40 to-black/90 -->
+<!-- 
+    <div class=" relative flex justify-center items-center col-span-1">
+                <video class=" absolute mt-[100px]" data-uia="nmhp-card-animation-asset-video" autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+                <img class="flex flex-col z-10" src="./images/download1.png" alt="">
+            </div>
+ -->
+<body>
+    <!-- Principal -->
+    <main class="flex flex-col items-center bg-[url('./imagenes/fondo.jpg')] bg-no-repeat bg-cover bg-center h-[700px] bg-black/50 bg-blend-overlay">
+        <!-- Barra de Navegacion -->
+        <nav class="flex items-center justify-between h-[5.375rem] w-[1210px]">
+            <!-- Logo -->
+            <img class="w-[185px]" src="imagenes/logo.png" alt="">
+
+            <!-- Grupo Derecha -->
+            <div class="flex items-center">
+                <!-- Elemento Select -->
+                <div class="flex justify-center items-center gap-2 w-[131px] h-[32px] mr-6 border-solid border-gray-400 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative" >
+                    <img class="w-[17px] h-[17px] absolute top-[5px] left-2 " src="iconos/planeta.png" alt="">
+                    <select class="appearance-none text-white bg-transparent text-[16px] w-[100%] px-[34px] py-[6px]" name="select">
+                        <option value="Español" selected>Español</option>
+                        <option value="English">English</option>
+                    </select>
+                    <img class="w-[10px] absolute top-[5px] right-4" src="iconos/flechabajo.png" alt="">
+                </div>
+
+                <a href="sesion.html"><span class="bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6  py-[6px] text-[14px] font-[500] leading-normal" href="sesion.html">Iniciar sesión</span></a>
+</div>
+        </nav>
+
+        <!-- Titulo Principal -->
+        <section class="text-white flex flex-col justify-center items-center mt-[195px]">
+            <h1 class="text-[48px] leading-tight">Películas y series ilimitadas y mucho más</h1>
+            <p class="text-[24px] mt-[20px]">Planes desde USD3,99 al mes.</p>
+
+            <form class="flex flex-col mt-[32px]" action="">
+                <h3 class="text-[20px] text-white">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</h3>
+                <!-- Ingresar Email -->
+                <div class="flex justify-center items-center mt-[24px] relative">
+                    <label class="absolute top-5 left-[160px] z-10 text-white/70" for="email">Email</label>
+                    <input id='email' class="flex justify-center items-center gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative" type="text"> 
+                    <button class="flex items-center w-[20%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-[500] leading-normal text-[24px]">
+                        Comenzar
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="Hawkins-Icon Hawkins-Icon-Standard"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z" fill="currentColor"></path></svg>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+<!-- Linea divisoria -->
+<div class="w-[100%] h-[8px] bg-[#232323]"></div>
+
+<!-- Seccion 1 -->
+    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
+        <div class="flex flex-col text-white col-start-2 col-end-3">
+            <h2 class="text-[48px]">Disfruta en tu TV</h2>
+            <p class="text-[24px] mt-[24px]">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.</p>
+        </div>
+        <div class="flex relative justify-center items-center col-start-3 col-end-4">
+            <img class="w-[100%] z-10" src="imagenes/tv.png" alt="">
+            <iframe class="absolute w-[72%] top-[21%] aspect-[16/9]" src="https://www.youtube.com/embed/Rf9_IAiEzQs?start=8&controls=0&mute=1&autoplay=1&loop=1&playlist=Rf9_IAiEzQs" title="Presidente Boxeador" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            
+        </div>
+        
+    </section>
+
+<!-- Linea divisoria -->
+<div class="w-[100%] h-[8px] bg-[#232323]"></div>
+
+<!-- Seccion 2 -->
+    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
+        <img class="col-start-2 col-end-3" src="imagenes/movil.jpg" alt="">
+        <div class="flex flex-col text-white col-start-3 col-end-4">
+            <h2 class="text-[48px]">Descarga tus series para verlas offline</h2>
+            <p class="text-[24px] mt-[24px]">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+        </div>
+    </section>
+
+<!-- Linea divisoria -->
+<div class="w-[100%] h-[8px] bg-[#232323]"></div>
+
+<!-- Seccion 3 -->
+    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
+        <div class="flex flex-col text-white col-start-2 col-end-3">
+            <h2 class="text-[48px]">Disfruta donde quieras</h2>
+            <p class="text-[24px] mt-[24px]">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo adicional.</p>
+        </div>
+        <img class="col-start-3 col-end-4" src="imagenes/mac.png" alt="">
+    </section>
+
+
+<!-- Linea divisoria -->
+<div class="w-[100%] h-[8px] bg-[#232323]"></div>
+
+<!-- Seccion 2 -->
+<section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
+    <img class="col-start-2 col-end-3" src="imagenes/ninos.png" alt="">
+    <div class="flex flex-col text-white col-start-3 col-end-4">
+        <h2 class="text-[48px]">Crea perfiles para niños</h2>
+        <p class="text-[24px] mt-[24px]">Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
+    </div>
+</section>
+
+</body>
+
+</html>
