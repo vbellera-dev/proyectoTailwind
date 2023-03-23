@@ -158,13 +158,13 @@ ul li {
     }
 
     to {
-        transform: scale(0.75) translateX(-62px) translateY(-20px);
+        transform: scale(0.75) translateX(-17%) translateY(-14px);
     }
 }
 
 @keyframes labelLoginBack {
     from {
-        transform: scale(0.75) translateX(-62px) translateY(-20px);
+        transform: scale(0.75) translateX(-17%) translateY(-14px);
     }
 
     to {

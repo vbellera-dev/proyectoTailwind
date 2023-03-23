@@ -15,19 +15,19 @@
 <body>
     <!-- Principal -->
     <main
-        class="flex flex-col items-center bg-[url('./imagenes/fondo.jpg')] bg-no-repeat bg-cover bg-center h-[700px] bg-black/50 bg-blend-overlay">
+        class="flex flex-col items-center bg-[url('./imagenes/fondo.jpg')] bg-no-repeat bg-cover bg-center lg:h-[700px] h-[560px] bg-black/50 bg-blend-overlay">
         <!-- Barra de Navegacion -->
-        <nav class="flex items-center justify-between h-[5.375rem] w-[1210px]">
+        <nav class="flex items-center justify-between h-[5.375rem] xl:w-[1210px] lg:w-[1000px] w-[95%]">
             <!-- Logo -->
-            <img class="w-[185px]" src="imagenes/logo.png" alt="">
+            <img class="lg:w-[185px] w-[110px]" src="imagenes/logo.png" alt="">
 
             <!-- Grupo Derecha -->
             <div class="flex items-center">
                 <!-- Elemento Select -->
                 <div
-                    class="selector flex justify-center items-center gap-2 w-[131px] h-[32px] mr-6 border-solid border-gray-400 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative">
+                    class="selector flex justify-center items-center gap-2 w-[131px] h-[32px] mr-6 border-solid border-gray-400 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative max-[650px]:w-[76px]">
                     <img class="w-[17px] h-[17px] absolute top-[5px] left-2 " src="iconos/planeta.png" alt="">
-                    <select class="appearance-none text-white bg-transparent text-[16px] w-[100%] px-[34px] py-[6px]"
+                    <select class="appearance-none text-white bg-transparent text-[16px] w-[100%] px-[34px] py-[6px] max-[650px]:top-[12%] max-[650px]:text-[0px] max-[650px]:w-[131px]"
                         name="select">
                         <option value="Español" selected>Español</option>
                         <option value="English">English</option>
@@ -41,30 +41,30 @@
         </nav>
 
         <!-- Titulo Principal -->
-        <section class="text-white flex flex-col justify-center items-center mt-[195px]">
-            <h1 class="text-[48px] leading-tight">Películas y series ilimitadas y mucho más</h1>
-            <p class="text-[24px] mt-[20px]">Planes desde USD3,99 al mes.</p>
+        <section class="text-white flex flex-col justify-center items-center lg:mt-[195px] mt-[80px] ">
+            <h1 class="lg:text-[48px] text-[32px] leading-tight text-center">Películas y series ilimitadas y mucho más</h1>
+            <p class="lg:text-[24px] text-[18px] mt-[20px]">Planes desde USD3,99 al mes.</p>
 
-            <form class="flex flex-col mt-[32px]" action="">
-                <h3 class="text-[20px] text-white">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
+            <form class="flex flex-col items-center mt-[32px]" action="">
+                <h3 class="lg:text-[20px] text-[18px] text-white text-center w-[90%]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
                     reiniciar tu membresía de Netflix.</h3>
                 <!-- Ingresar Email -->
-                <div class="flex justify-center items-center mt-[24px] relative">
-                    <input id='email'
-                        class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative"
-                        type="text">
-                    <label class="absolute top-[30%] left-[17%] z-10 text-white/70" for="email">Email</label>
-                    <button
-                        class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px]">
-                        Comenzar
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="Hawkins-Icon Hawkins-Icon-Standard">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </button>
-                </div>
+            <div class="flex justify-center items-center mt-[24px] relative max-[650px]:flex-col w-[100%]">
+                <input id='email'
+                    class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative max-[650px]:w-[80%] max-[650px]:h-[48px] max-[650px]:mb-4"
+                    type="text">
+                <label class="absolute top-[30%] left-[17%] z-10 text-white/70 max-[650px]:top-[11%] max-[650px]:left-[12%]" for="email">Email</label>
+                <button
+                    class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px] max-[650px]:w-[35%] max-[650px]:text-[18px]">
+                    Comenzar
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="Hawkins-Icon Hawkins-Icon-Standard">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.29297 19.2928L14.5859 12L7.29297 4.70706L8.70718 3.29285L16.7072 11.2928C16.8947 11.4804 17.0001 11.7347 17.0001 12C17.0001 12.2652 16.8947 12.5195 16.7072 12.7071L8.70718 20.7071L7.29297 19.2928Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
             </form>
         </section>
     </main>
@@ -73,13 +73,13 @@
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
     <!-- Seccion 1 -->
-    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
-        <div class="flex flex-col text-white col-start-2 col-end-3">
-            <h2 class="text-[48px]">Disfruta en tu TV</h2>
-            <p class="text-[24px] mt-[24px]">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de
+    <section class="grid place-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr] py-[64px] bg-black items-center">
+        <div class="flex flex-col max-[850px]:items-center text-white col-start-2 col-end-3 max-[850px]:col-end-4">
+            <h2 class="text-[48px] max-[850px]:text-[36px] max-[850px]:text-center">Disfruta en tu TV</h2>
+            <p class="text-[24px] mt-[24px] max-[850px]:text-[18px] max-[850px]:text-center">Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de
                 Blu-ray y más.</p>
         </div>
-        <div class="flex relative justify-center items-center col-start-3 col-end-4">
+        <div class="flex relative justify-center items-center max-[850px]:col-start-2 col-start-3 col-end-4 max-[850px]:w-[95%]">
             <img class="w-[100%] z-10" src="imagenes/tv.png" alt="">
             <video class="absolute w-[73%] top-[21%]" autoplay="" playsinline="" muted="" loop="">
                 <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
@@ -87,14 +87,14 @@
             </video>
         </div>
 
-    </section>
+    </section>max-[850px]:col-start-2  col-end-4
 
     <!-- Linea divisoria -->
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
     <!-- Seccion 2 -->
-    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
-        <div class="flex relative justify-center items-center col-start-2 col-end-3">
+    <section class="grid place-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr] py-[64px] bg-black items-center"">
+        <div class="flex relative justify-center items-center max-[850px]:w-[95%] col-start-2 col-end-3 max-[850px]:col-end-4 max-[850px]:order-last">
             <img class="w-[100%]" src="imagenes/movil.jpg" alt="">
             <div
                 class="flex justify-between items-center w-[54%] h-[24%] top-[71%] py-[8px] px-[12px] border-solid border-gray-600 border-[1px] rounded-[12px] bg-black absolute z-10">
@@ -107,9 +107,9 @@
             </div>
         </div>
 
-        <div class="flex flex-col text-white col-start-3 col-end-4">
-            <h2 class="text-[48px]">Descarga tus series para verlas offline</h2>
-            <p class="text-[24px] mt-[24px]">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
+        <div class="flex flex-col max-[850px]:items-center text-white max-[850px]:col-start-2  col-end-4">
+            <h2 class="text-[48px] max-[850px]:text-[36px] max-[850px]:text-center">Descarga tus series para verlas offline</h2>
+            <p class="text-[24px] mt-[24px] max-[850px]:text-[18px] max-[850px]:text-center">Guarda tu contenido favorito y tendrás siempre algo para ver.</p>
         </div>
     </section>
 
@@ -117,14 +117,14 @@
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
     <!-- Seccion 3 -->
-    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
-        <div class="flex flex-col text-white col-start-2 col-end-3">
-            <h2 class="text-[48px]">Disfruta donde quieras</h2>
-            <p class="text-[24px] mt-[24px]">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin
+    <section class="grid place-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr] py-[64px] bg-black items-center"">
+        <div class="flex flex-col max-[850px]:items-center text-white col-start-2 col-end-3 max-[850px]:col-end-4">
+            <h2 class="text-[48px] max-[850px]:text-[36px] max-[850px]:text-center">Disfruta donde quieras</h2>
+            <p class="text-[24px] mt-[24px] max-[850px]:text-[18px] max-[850px]:text-center">Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin
                 costo adicional.</p>
         </div>
 
-        <div class="flex relative justify-center items-center col-start-3 col-end-4">
+        <div class="flex relative justify-center items-center max-[850px]:col-start-2 col-start-3 col-end-4 max-[850px]:w-[95%]">
             <img class="w-[100%] z-10" src="imagenes/mac.png" alt="">
             <video class="absolute w-[62%] top-[11%]" autoplay="" playsinline="" muted="" loop="">
                 <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
@@ -137,11 +137,11 @@
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
     <!-- Seccion 4 -->
-    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center">
-        <img class="col-start-2 col-end-3" src="imagenes/ninos.png" alt="">
-        <div class="flex flex-col text-white col-start-3 col-end-4">
-            <h2 class="text-[48px]">Crea perfiles para niños</h2>
-            <p class="text-[24px] mt-[24px]">Los niños vivirán aventuras con sus personajes favoritos en un espacio
+    <section class="grid place-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr] py-[64px] bg-black items-center"">
+        <img class="max-[850px]:w-[95%] col-start-2 col-end-3 max-[850px]:col-end-4 max-[850px]:order-last" src="imagenes/ninos.png" alt="">
+        <div class="flex flex-col max-[850px]:items-center text-white max-[850px]:col-start-2  col-end-4">
+            <h2 class="text-[48px] max-[850px]:text-[36px] max-[850px]:text-center">Crea perfiles para niños</h2>
+            <p class="text-[24px] mt-[24px] max-[850px]:text-[18px] max-[850px]:text-center">Los niños vivirán aventuras con sus personajes favoritos en un espacio
                 diseñado exclusivamente para ellos, sin costo con tu membresía.</p>
         </div>
     </section>
@@ -150,9 +150,9 @@
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
     <!-- Seccion Preguntas Frecuentes-->
-    <section class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black items-center justify-items-center">
+    <section class="grid grid-cols-[1fr_586px_586px_1fr] py-[64px] bg-black items-center justify-items-center xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr]">
 
-        <h2 class="text-[48px] text-white col-span-4 justify-self-center">Preguntas frecuentes</h2>
+        <h2 class="text-[48px] text-white col-span-4 max-[650px]:text-[36px]">Preguntas frecuentes</h2>
 
         <!-- Pregunta 1 -->
         <ul id="acordeon" class="col-start-2 col-end-4 mt-6">
@@ -325,16 +325,16 @@
 
         <!-- Formulario -->
         <form class="flex flex-col mt-[50px] col-start-2 col-end-4 text-white" action="">
-            <h3 class="text-[20px]">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
+            <h3 class="text-[20px] text-center">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o
                 reiniciar tu membresía de Netflix.</h3>
             <!-- Ingresar Email -->
-            <div class="flex justify-center items-center mt-[24px] relative">
+            <div class="flex justify-center items-center mt-[24px] relative max-[650px]:flex-col">
                 <input id='email'
-                    class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative"
+                    class="flex justify-center items-center pl-4 pt-2 gap-2 w-[45%] h-[56px] mr-3 border-solid border-gray-500 border-[1px] rounded-[3px] bg-[#211d1d]/50 relative max-[650px]:w-[90%] max-[650px]:h-[48px] max-[650px]:mb-4"
                     type="text">
-                <label class="absolute top-[30%] left-[17%] z-10 text-white/70" for="email">Email</label>
+                <label class="absolute top-[30%] left-[17%] z-10 text-white/70 max-[650px]:top-[11%] max-[650px]:left-[7%]" for="email">Email</label>
                 <button
-                    class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px]">
+                    class="flex items-center justify-center w-[21%] h-[56px] bg-[color:var(--netflix-red)] text-white px-[16px] rounded-[3px] mr-6 py-[6px] font-['Netflix_Md'] leading-normal text-[24px] max-[650px]:w-[35%] max-[650px]:text-[18px]">
                     Comenzar
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="Hawkins-Icon Hawkins-Icon-Standard">
@@ -350,7 +350,7 @@
     <!-- Linea divisoria -->
     <div class="w-[100%] h-[8px] bg-[#232323]"></div>
 
-    <footer class="grid grid-cols-[365px_1fr_1fr_365px] py-[64px] bg-black text-white/[0.7] font-['Netflix_Rg']">
+    <footer class="grid grid-cols-[1fr_586px_586px_1fr] py-[64px] bg-black text-white/[0.7] font-['Netflix_Rg'] xl:grid-cols-[1fr_586px_586px_1fr] lg:grid-cols-[1fr_420px_420px_1fr] md:grid-cols-[1fr_390px_390px_1fr] max-[850px]:grid-cols-[1fr_45%_45%_1fr]">
         <div class="col-start-2 col-end-3 py-[12px]">
             <span>¿Preguntas? Llama al <a class="underline" href="">1 (408) 469-4467 (USA)</a></span>
         </div>
